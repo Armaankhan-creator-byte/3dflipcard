@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+  /* background-color:#90a955; */
+  background-image: linear-gradient(to bottom right ,#88955f ,#b1e112);
+  width:100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height:100vh;
 }
+.container{
+  background-color: transparent;
+  width: 350px;
+  height: 400px;
+perspective: 1000px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.container:hover .container-inner{
+  transform: rotateY(180deg);
+}
+.front-view {
+  border: 10px solid #fff;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right ,#6c757d ,#abd0ec);
+ backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+ .front-view img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.user-image img{
+  position: absolute;
+  top:10%;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width:150px;
+  height:150px;
+  background-image: linear-gradient(to bottom right ,#6c757d ,#abd0ec);
+   border-top-color: #6c757d;
+border-left-color: #b1e112;
+border-right-color: #88955f;
+border-bottom-color: #abd0ec;
+border-style: solid;
+}
+.back-view{
+ transform: rotateY(180deg);
+background-color: #fff;
+border-radius: 10px;
+backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.content{
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-icons{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width:150px;
+}
+.social-icons a{
+  background-image: linear-gradient(to bottom right ,#6c757d ,#abd0ec);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width:30px;
+  height:30px;
+  align-items: center;
+  
 }
