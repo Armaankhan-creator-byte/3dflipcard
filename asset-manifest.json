@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/3dflipcard/static/css/main.35b5055d.css",
+    "main.js": "/3dflipcard/static/js/main.65f81d83.js",
+    "static/media/UserImage-removebg-preview.png": "/3dflipcard/static/media/UserImage-removebg-preview.b0da152a7864568701a9.png",
+    "index.html": "/3dflipcard/index.html",
+    "main.35b5055d.css.map": "/3dflipcard/static/css/main.35b5055d.css.map",
+    "main.65f81d83.js.map": "/3dflipcard/static/js/main.65f81d83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35b5055d.css",
+    "static/js/main.65f81d83.js"
+  ]
+}
